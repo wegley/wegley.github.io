@@ -38,8 +38,12 @@
             </div>
         </div>
         <footer>
-            <p><span class="fa fa-moon-o" onclick="toggleDarkMode()"></span> &middot; <a href="https://github.com/wegley/wegley.github.io/blob/master/LICENSE" target="_blank">Copyright Information</a></p>
+            <p><span class="fa fa-moon-o" onclick="setDarkMode()"></span> &middot; <a href="https://github.com/wegley/wegley.github.io/blob/master/LICENSE" target="_blank">Copyright Information</a></p>
         </footer>
     </div>
 </body>
-<script src="assets/theme.js"></script>
+<script>
+    function setDarkMode() {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+</script>
