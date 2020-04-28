@@ -5,7 +5,7 @@ html {
     --hue: 210;
     --background-inactive: hsl(var(--hue), 20%, 90%);
     --background-active: hsl(var(--hue), 20%, 80%);
-    --text-color-inactive: hsl(var(--hue), 10%, 30%);
+    --text-color-inactive: hsl(var(--hue), 10%, 40%);
     --text-color-active: hsl(var(--hue), 10%, 20%);
 }
 
@@ -13,7 +13,7 @@ html[data-theme='dark'] {
     --hue: 210;
     --background-inactive: hsl(var(--hue), 20%, 10%);
     --background-active: hsl(var(--hue), 20%, 20%);
-    --text-color-inactive: hsl(var(--hue), 10%, 70%);
+    --text-color-inactive: hsl(var(--hue), 10%, 60%);
     --text-color-active: hsl(var(--hue), 10%, 80%);
 }
 
