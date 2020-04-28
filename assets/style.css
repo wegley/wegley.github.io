@@ -31,8 +31,13 @@ body {
     color: var(--text-color-inactive);
 }
 
+h1 {
+    font-size: 128px;
+}
+
 footer {
     position: absolute;
+    height: 48px;
     width: 100%;
     bottom: 0;
     color: var(--text-color-inactive);
@@ -55,7 +60,8 @@ a:visited {
     overflow: hidden;
     display: block;
     position: relative;
-    
+    margin-bottom: -48px;
+    text-align: center;
 }
 
 .monogram {
