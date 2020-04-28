@@ -24,6 +24,7 @@ body {
     margin: 0;
     position: relative;
     user-select: none;
+    -webkit-user-select: none;
     -webkit-touch-callout: none;
     font-family: 'Fira Mono', monospace;
     background: var(--background-inactive);
