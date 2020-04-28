@@ -102,10 +102,19 @@ a:visited {
     color: var(--text-color-active);
 }
 
+.tile:hover:active {
+    background: var(--background-active);
+    color: var(--text-color-active);
+}
+
 .tile .content {
     visibility: hidden;
 }
 
 .tile:hover .content {
+    visibility: visible;
+}
+
+.tile:hover:active .content {
     visibility: visible;
 }
