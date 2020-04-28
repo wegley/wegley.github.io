@@ -46,5 +46,5 @@
     function setDarkMode() {
         document.documentElement.setAttribute('data-theme', 'dark')
     }
-    $('body').on('touchstart', function() {}); // for mobile
+    document.addEventListener('touchstart', function(){}, true); // for mobile
 </script>
