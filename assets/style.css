@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html {
+    --hue: 210;
+    --background-inactive: hsl(var(--hue), 20%, 90%);
+    --background-active: hsl(var(--hue), 20%, 80%);
+    --text-color-inactive: hsl(var(--hue), 10%, 30%);
+    --text-color-active: hsl(var(--hue), 10%, 20%);
+}
+
+html[data-theme='dark'] {
+    --hue: 210;
+    --background-inactive: hsl(var(--hue), 20%, 10%);
+    --background-active: hsl(var(--hue), 20%, 20%);
+    --text-color-inactive: hsl(var(--hue), 10%, 70%);
+    --text-color-active: hsl(var(--hue), 10%, 80%);
+}
+
+html,
+body {
+    font-family: 'Fira Mono', monospace;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    background: var(--background-inactive);
+    color: var(--text-color-inactive);
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: var(--text-color-inactive);
+    font-size: 12px;
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    
+}
+
+.monogram {
+    font-size: 128px;
+    margin-top: -28px;
+}
+
+.content {
+    font-size: 28px;
+}
+
+.content img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.tiles {
+    position: relative;
+    margin-top: 120px;
+    width: 480px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tile {
+    display: inline-block;
+    border-radius: 20px;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    transition: all 0.25s;
+    padding-bottom: 14px;
+}
+
+.spacer {
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+
+.tile:hover {
+    background: var(--background-active);
+    color: var(--text-color-active);
+}
+
+.tile .content {
+    visibility: hidden;
+}
+
+.tile:hover .content {
+    visibility: visible;
+}
